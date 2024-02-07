@@ -37,7 +37,6 @@ const DashboardTable: ComponentType<ITableProps> = ({ handleEditProduct }) => {
     dispatch(deleteProduct({ data: selectedProduct }));
   };
 
-  console.log({ filteredData: JSON.stringify(filteredData) })
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">

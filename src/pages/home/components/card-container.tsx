@@ -12,6 +12,7 @@ const CardContainer = () => {
 
   const { totalProducts, numberOfCategories, outOfStockProducts, totalStoreValue } = filteredData
 
+  console.log({ error })
   return (
     <RenderBoundary status={status} loading={status === ApiStatus.Loading} errorMessage={<p>{error}</p>}>
       <Stack direction="row" spacing={2}>
