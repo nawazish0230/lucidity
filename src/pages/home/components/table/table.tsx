@@ -44,8 +44,7 @@ const DashboardTable: ComponentType<ITableProps> = ({ handleEditProduct }) => {
         <Header />
         <RenderBoundary
           status={status}
-          // loading={status === ApiStatus.Loading}
-          loading={true}
+          loading={status === ApiStatus.Loading}
           errorMessage={<p>{error}</p>}
         >
           <TableBody>
